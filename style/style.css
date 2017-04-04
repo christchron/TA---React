@@ -1,0 +1,427 @@
+@import "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css";
+@import "../node_modules/react-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css";
+@import "../node_modules/react-bootstrap-table/css/react-bootstrap-table-all.min.css";
+@import "../node_modules/react-switch-button/stylesheets/react-switch-button.css";
+
+form a {
+	margin-left: 5px;
+}
+
+.label {
+	margin:3px;
+	color: black;
+}
+
+h4 {
+	text-align: center;
+}
+
+.row {
+	margin: 3px;
+}
+
+.text-primary{
+	font-size: 1rem;
+}
+
+table {
+    font-size: 0,7rem;
+    width: 100%;
+    border: none !important; 
+}
+
+th {
+    background-color: #00A2E3;
+    color: white;
+}
+
+.input-group{
+    width:110% !important;
+}
+
+.react-bs-table{
+	border: none;
+    border-radius: 0px;
+}
+
+.react-bs-table table{
+	font-size: 0.7rem;
+}
+
+.table-bordered>thead>tr>th{
+	border: none;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{
+	border: 0px solid rgba(255,255,255,0);
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{
+    background-color: #f9f9f9;
+    border: 1px solid rgb(249, 249, 249);
+}
+
+.btn{
+	font-size: 0.7rem !important;
+}
+
+input, button, select, textarea{
+	font-size: 0.7rem !important;
+}
+
+.btn-secondary{
+    color: #373a3c;
+    background-color: #fff;
+    border-color: #fff !important;
+}
+
+p.periode {
+    margin-top: 5px !important;
+}
+
+span.until {
+    margin-left: 140px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+div.period{
+    margin-right: -35px;
+}
+
+th.date{
+    text-align: left !important;
+    padding-left: 30px !important;
+}
+
+td.date{
+    text-align: left !important;
+    padding-left: 30px !important;    
+}
+
+td.rightpad{
+    padding-right: 30px !important;    
+}
+
+span.units{
+    font-size: 15px;
+}
+
+select {
+    width: 100%;
+    border-top: none;
+    margin-top: 10px !important;
+    border-left: none;
+    border-right: none;
+    font-size: 0.8rem !important;
+    font-family: inherit !important;
+    font-weight: bold !important;
+    border-color: #a3a5a8	;
+}
+
+.btn-group{
+	float: right;
+}
+
+.input-group-addon:last-child{
+    border-left: none !important;
+    border-top: none;
+    border-right: none;
+    background-color: white;
+    border-radius: 0;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    border-left: none;
+    border-radius: 0;
+    border-top: 0;
+    border-right: none;
+    box-shadow: none;
+    color:#808386 !important;
+}
+
+input[type=checkbox]{
+	margin-top: 10px;
+}
+
+.text-small{
+    font-size: 0.7rem;
+    color: grey;
+}
+
+.number-below{
+    color: #585858;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.well{
+    padding: 10px !important;
+    padding-bottom: 0px !important;
+    border-radius: 0px !important;
+}
+
+.below-data{
+    height: 75px;
+}
+
+.mtop{
+    margin-top: 20px;
+}
+
+.col-xs-1{
+    width: 1% !important;
+}
+
+table td.absorbing-column {
+    width: 100%;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #F2F2F2; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #9A9A9A; 
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #26a69a;
+    background-color: #26a69a;
+    z-index: 0;
+}
+
+.table{
+    font-size: 0.7rem;
+}
+
+tr.trHeight{
+    height: 35px;
+}
+
+.table>thead>tr>th{
+    vertical-align: middle !important; 
+}
+
+table.conversation{
+    table-layout: fixed;
+    width: 1100px;
+}
+
+table.peaktime{
+    table-layout: fixed;
+    width: 1100px;
+}
+
+.table>tbody>tr>td.conversation{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.table>tbody>tr>td.id ,.table>thead>tr>th.id{
+    text-align: center;
+    width: 130px !important;
+}
+
+.table>tbody>tr>td.date ,.table>thead>tr>th.date{
+    width: 120px;
+    text-align: left;
+}
+
+.table>thead>tr>th.cit{
+    width: 100px;
+    text-align: center;
+}
+
+.table>tbody>tr>td.cit{
+    text-align: right;
+    padding-right:30px;
+}
+
+.table>thead>tr>th.responsetime{
+    width: 120px;
+    text-align: center;
+}
+
+.table>tbody>tr>td.responsetime{
+    text-align: right;
+    padding-right:30px; 
+}
+
+.table>thead>tr>th.responseduration{
+    width: 135px;
+    text-align: center;
+}
+
+.table>tbody>tr>td.responseduration{
+    text-align: right;
+    padding-right:30px;
+}
+
+.table>thead>tr>th.resolvedduration{
+    width: 135px;
+    text-align: center;
+}
+
+.table>tbody>tr>td.resolvedduration{
+    text-align: right;
+    padding-right:30px;
+}
+
+.table>thead>tr>th.kpi{
+    width: 60px;
+}
+
+.table>thead>tr>th.chatcontent{
+    width: 160px;
+}
+
+.table>thead>tr>th.chatrespond{
+    width: 160px;
+}
+
+.table>thead>tr>th.type, .table>tbody>tr>td.type{
+    width: 80px;
+    text-align: center;
+}
+
+.table>thead>tr>th.category, .table>tbody>tr>td.category{
+    width: 80px;
+    text-align: center;
+}
+
+.table>thead>tr>th.sentiment, .table>tbody>tr>td.sentiment{
+    width: 80px;
+    text-align: center;
+}
+
+.table>tbody>tr>td.previd ,.table>thead>tr>th.previd{
+    text-align: center;
+    width: 120px !important;
+}
+
+.table>tbody>tr>td.newid ,.table>thead>tr>th.newid{
+    text-align: center;
+    width: 120px !important;
+}
+
+.table>thead>tr>th.email, .table>tbody>tr>td.email{
+    width: 130px;
+    text-align: center;
+}
+
+.table>thead>tr>th.staff, .table>tbody>tr>td.staff{
+    width: 80px;
+    text-align: center;
+}
+
+.table>thead>tr>th.status, .table>tbody>tr>td.status{
+    width: 80px;
+    text-align: center;
+}
+
+.table>thead>tr>th.no, .table>tbody>tr>td.no{
+    text-align: center;
+    width: 50px;
+}
+
+.table>thead>tr>th.chatgrowth{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.table>tbody>tr>td.chatgrowth{
+    text-align: right;
+    padding-right:30px;
+}
+
+.table>thead>tr>th.chatcount{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.table>tbody>tr>td.chatcount{
+    text-align: right;
+    padding-right:30px;
+}
+
+.table>thead>tr>th.incc{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.table>tbody>tr>td.incc{
+    text-align: right;
+    padding-right:30px;
+}
+
+.table>thead>tr>th.outcc{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.table>tbody>tr>td.outcc{
+    text-align: right;
+    padding-right:30px;
+}
+
+div.table{
+    height:300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 20px;
+}
+
+div.tablebody{
+    overflow-y: scroll;
+}
+
+.pagination>li>a{
+    border: none !important;
+    color: #00a2e3;
+}
+
+.chartswitch{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+div.header{
+    white-space: nowrap;
+}
+
+.rsbc-switch-button>label:first-child{
+    min-width: 0px !important;
+}
+
+th.switch:hover{
+    background-color: #000 !important;
+}
+
+.first{
+    background-color: rgba(128,128,128,0.3);
+    font-weight: bold;
+}
