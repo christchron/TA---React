@@ -3,6 +3,7 @@ import moment from 'moment';
 import DateTimeField from 'react-bootstrap-datetimepicker';
 import ActiveButton from './active_button';
 
+
 export default (props) => {
 	var aButton = (props.this.state.checked && props.this.state.url!="category") ? <ActiveButton url={props.this.state.url} handler = {props.this} link = {props.first}/> : <div></div>;
 	var switchButton = props.chart 
@@ -13,17 +14,7 @@ export default (props) => {
 		<div className="row">
 			<div className="col-md-12 header">
 				<div className="col-md-2">
-				  	<select
-					    name="Analytics Type"
-					    onChange={props.this.handleSelectedAnalytics}>
-					     <option value={props.first} className="select-hr first">{props.firstLabel}</option>
-					     <option value={props.second} className="select-hr">{props.secondLabel}</option>
-					     <option value={props.third} className="select-hr">{props.thirdLabel}</option>
-					     <option value={props.fourth} className="select-hr">{props.fourthLabel}</option>
-					     <option value={props.fifth} className="select-hr">{props.fifthLabel}</option>
-					     <option value={props.sixth} className="select-hr">{props.sixthLabel}</option>
-					     <option value={props.seventh} className="select-hr">{props.seventhLabel}</option>
-				    </select>
+				  	<img src='logo-text.png'/>
 				</div>
 				<div className="col-md-2">
 			  	</div>

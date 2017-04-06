@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
+
 import App from './components/app';
 import ShowChatCount from './components/chat_count';
 import ShowConversation from './components/conversation';
@@ -9,10 +10,11 @@ import ShowTopTenNetizen from './components/nitizen';
 import ShowPeakTime from './components/peak_time';
 import ShowResponseDuration from './components/response_duration';
 import ShowResolvedDuration from './components/resolved_duration';
+import Home from './components/home';
 
 export default (
 	<Route path="/" component={App}>
-		<IndexRoute component = {ShowChatCount} />
+		<IndexRoute component = {Home} />
 		<Route path="chat_count" component = {ShowChatCount} />
 		<Route path="conversation" component = {ShowConversation} />
 		<Route path="conversation" component = {ShowConversation} />
