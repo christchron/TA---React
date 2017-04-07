@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as fetchDataActionCreators from '../actions/index';
 import SearchTrack from './search-track';
+import Sofa from './sofa';
 
 class Home extends Component{
 	static contextTypes = {
@@ -14,7 +15,7 @@ class Home extends Component{
 		return (
 			<div>
 				<h3><ReactHeader/></h3>
-				<SearchTrack/>
+				<Sofa/>
 			</div>
 		);
 	}
