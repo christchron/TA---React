@@ -53,6 +53,10 @@ form a {
     font-weight: bold;
 }
 
+.margin-bottom-50{
+    margin-bottom:50px;
+}
+
 .header-text{
     height: 60px;
     line-height: 61px;

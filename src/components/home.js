@@ -5,6 +5,8 @@ import {bindActionCreators} from 'redux';
 import * as fetchDataActionCreators from '../actions/index';
 import SearchTrack from './search-track';
 import Sofa from './sofa';
+import ImageSlider from './image-slider';
+import Button from 'simple-react-button';
 
 class Home extends Component{
 	static contextTypes = {
@@ -16,6 +18,8 @@ class Home extends Component{
 			<div>
 				<h3><ReactHeader/></h3>
 				<Sofa/>
+				<ImageSlider/>
+				
 			</div>
 		);
 	}
