@@ -6,7 +6,7 @@ import * as fetchDataActionCreators from '../actions/index';
 import SearchTrack from './search-track';
 import Sofa from './sofa';
 import ImageSlider from './image-slider';
-import Button from 'simple-react-button';
+import PromoBox from './promo-box';
 
 class Home extends Component{
 	static contextTypes = {
@@ -19,7 +19,7 @@ class Home extends Component{
 				<h3><ReactHeader/></h3>
 				<Sofa/>
 				<ImageSlider/>
-				
+				<PromoBox/>
 			</div>
 		);
 	}

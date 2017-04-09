@@ -16,6 +16,46 @@ form a {
     margin-left: 30px;
 }
 
+.center{
+    text-align: center;
+}
+
+.promo-box{
+    width: 1000px;
+    z-index: 1;
+    position: relative;
+    margin-top: -148px;
+    margin-left: 250px;
+}
+
+.promo-box-header{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+    background-color:#00b1bb;
+    text-align: center;
+    padding: 10px 0 11px;
+}
+
+.price-tag{
+    font-size:15px;
+    top:-.5em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    margin-right: 3px;
+}
+
+.price-number{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.product-name{
+    font-size: 20px;
+    color: #82888a;
+}
+
 .float-right{
     float:right;
 }
