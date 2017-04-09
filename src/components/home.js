@@ -7,6 +7,8 @@ import SearchTrack from './search-track';
 import Sofa from './sofa';
 import ImageSlider from './image-slider';
 import PromoBox from './promo-box';
+import PromoBanner from './promo-banner';
+import PromoAC from './promo-ac';
 
 class Home extends Component{
 	static contextTypes = {
@@ -20,6 +22,8 @@ class Home extends Component{
 				<Sofa/>
 				<ImageSlider/>
 				<PromoBox/>
+				<PromoBanner/>
+				<PromoAC/>
 			</div>
 		);
 	}

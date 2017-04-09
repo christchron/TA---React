@@ -8,14 +8,14 @@ export default (props) => {
 			</div>
 			<div className="col-md-12 row " style={{marginLeft:1+'px', marginTop: -1+'px',background:'white', border: 1+'px solid #00b1bb'}}>
 				<div style = {{maxWidth:25+'%',marginLeft:10+'px', marginTop:10+'px'}}>
-					<img src='promo-1.jpg' style={{width:350+'px'}}/>
-					<img src='promo-2.jpg' style={{width:350+'px'}}/>
+					<img src='promo-1.jpg' style={{width:500+'px'}}/>
+					<img src='promo-2.jpg' style={{width:500+'px'}}/>
 				</div>
-				<div style={{marginLeft:120+'px'}}>
+				<div style={{marginLeft:200+'px', marginTop: 20+'px'}}>
 					<div className="row">
-						<div style={{width: 150+'px', marginLeft: 50+'px'}}	>
+						<div style={{width: 180+'px', marginLeft: 50+'px'}}	>
 							<div className="center">
-								<img src='produk-1.jpg' style={{width: 150+'px'}}/>
+								<img src='produk-1.jpg' style={{width: 180+'px'}}/>
 							</div>
 							<div className="center">
 								<span className="price-tag">Rp</span>
@@ -27,9 +27,9 @@ export default (props) => {
 								</div>
 							</div>
 						</div>
-						<div style={{width: 150+'px', marginLeft: 50+'px'}}	>
+						<div style={{width: 180+'px', marginLeft: 50+'px'}}	>
 							<div className="center">
-								<img src='produk-2.jpg' style={{width: 150+'px'}}/>
+								<img src='produk-2.jpg' style={{width: 180+'px'}}/>
 							</div>
 							<div className="center">
 								<span className="price-tag">Rp</span>
@@ -41,13 +41,13 @@ export default (props) => {
 								</div>
 							</div>
 						</div>
-						<div style={{width: 150+'px', marginLeft: 50+'px'}}	>
+						<div style={{width: 180+'px', marginLeft: 50+'px'}}	>
 							<div className="center">
-								<img src='produk-3.jpg' style={{width: 150+'px'}}/>
+								<img src='produk-3.jpg' style={{width: 180+'px'}}/>
 							</div>
 							<div className="center">
 								<span className="price-tag">Rp</span>
-								<span className="price-number">150,000</span>
+								<span className="price-number">180,000</span>
 							</div>
 							<div className="center">
 								<div className="product-name">
@@ -57,9 +57,9 @@ export default (props) => {
 						</div>
 					</div>
 					<div className="row">
-						<div style={{width: 150+'px', marginLeft: 50+'px'}}	>
+						<div style={{width: 180+'px', marginLeft: 50+'px'}}	>
 							<div className="center">
-								<img src='produk-4.jpg' style={{width: 150+'px'}}/>
+								<img src='produk-4.jpg' style={{width: 180+'px'}}/>
 							</div>
 							<div className="center">
 								<span className="price-tag">Rp</span>
@@ -71,9 +71,9 @@ export default (props) => {
 								</div>
 							</div>
 						</div>
-						<div style={{width: 150+'px', marginLeft: 50+'px'}}	>
+						<div style={{width: 180+'px', marginLeft: 50+'px'}}	>
 							<div className="center">
-								<img src='produk-5.jpg' style={{width: 150+'px'}}/>
+								<img src='produk-5.jpg' style={{width: 180+'px'}}/>
 							</div>
 							<div className="center">
 								<span className="price-tag">Rp</span>
@@ -85,9 +85,9 @@ export default (props) => {
 								</div>
 							</div>
 						</div>
-						<div style={{width: 150+'px', marginLeft: 50+'px'}}	>
+						<div style={{width: 180+'px', marginLeft: 50+'px'}}	>
 							<div className="center">
-								<img src='produk-6.jpg' style={{width: 150+'px'}}/>
+								<img src='produk-6.jpg' style={{width: 180+'px'}}/>
 							</div>
 							<div className="center">
 								<span className="price-tag">Rp</span>

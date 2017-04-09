@@ -10,15 +10,13 @@ export default (props) => {
       slidesToScroll: 1,
       autoplay:true,
       autoplaySpeed:10,
-      // pauseOnHover: false,
-      arrows: true,
-      // dotsClass: "margin-bottom-50"
+      arrows: true
     };
 	return (
 		<Slider {...settings}>
-			<div style={{paddingLeft: 60+"px"}}><img src='banner-1.jpg' /></div>
-			<div style={{paddingLeft: 60+"px"}}><img src='banner-2.jpg' /></div>
-			<div style={{paddingLeft: 60+"px"}}><img src='banner-3.jpg' /></div>
+			<div><img src='banner-1.jpg' style={{width:"100%"}} /></div>
+			<div><img src='banner-2.jpg' style={{width:"100%"}} /></div>
+			<div><img src='banner-3.jpg' style={{width:"100%"}} /></div>
 		</Slider>
 	);
 }

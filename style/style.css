@@ -16,20 +16,28 @@ form a {
     margin-left: 30px;
 }
 
+.header{
+    position: fixed !important;
+    z-index: 2 !important;
+    margin-top: -10px !important;
+    background: white !important;
+`   white-space: nowrap !important;
+}
+
 .center{
     text-align: center;
 }
 
 .promo-box{
-    width: 1000px;
+    width: 1280px;
     z-index: 1;
     position: relative;
     margin-top: -148px;
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 .promo-box-header{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     color:white;
     background-color:#00b1bb;
@@ -60,6 +68,13 @@ form a {
     float:right;
 }
 
+.header-fixed{
+    position: fixed;
+    z-index: 1;
+    margin-top: -10px;
+    background: white;
+}
+
 .margin-right-100{
     margin-right:100px;
 }
@@ -81,6 +96,7 @@ form a {
     height: 40px;
     font-size: 15px !important;
     border: none;
+    white-space: nowrap;
 
 }
 
@@ -98,6 +114,7 @@ form a {
 }
 
 .header-text{
+    white-space: nowrap;
     height: 60px;
     line-height: 61px;
     position: relative;
@@ -518,9 +535,6 @@ div.tablebody{
     white-space: nowrap;
 }
 
-div.header{
-    white-space: nowrap;
-}
 
 .rsbc-switch-button>label:first-child{
     min-width: 0px !important;

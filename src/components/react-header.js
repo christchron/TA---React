@@ -26,7 +26,7 @@ export default (props) => {
 					</div>
 			  	</div>
 			</div>
-			<div className="row header item-list">
+			<div className="row item-list" style={{marginTop:"70px"}}>
 				<div className="item-list">RUANG MAKAN</div>
 				<div className="item-list">DAPUR</div>
 				<div className="item-list">DEKORASI</div>
