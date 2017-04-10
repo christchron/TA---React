@@ -121,6 +121,14 @@ form a {
     margin-bottom: 15px;
 }
 
+.login{
+    margin-top: 90px;
+    width: 900px;
+    border: 1px solid #dce0e0;
+    margin-bottom: 15px;
+    margin-left:300px;   
+}
+
 .header-text{
     white-space: nowrap;
     height: 60px;

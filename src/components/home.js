@@ -18,33 +18,43 @@ import TopCategoriesFurniture from './top-categories-furniture';
 import Footer from './footer';
 import ItemList from './item-list';
 import Register from './register';
+import Login from './login';
 
 class Home extends Component{
 	static contextTypes = {
 		router: PropTypes.object
 	}
-	// <ItemList/>
-				// <Sofa/>
-				// <ImageSlider/>
-				// <PromoBox/>
-				// <PromoBanner/>
-				// <Promo5001000 imgSrc1="2.1.jpg" imgSrc2='2.2.jpg'/>
-				// <BeliYuk/>
-				// <PromoDapur/>
-				// <PageBreak imgSrc="page-break.png" styling1={{marginLeft:"-20px", width:"1520px"}} styling2={{width:"100%"}}/>
-				// <Promo5001000 imgSrc1="4.1.jpg" imgSrc2='4.2.jpg'/>
-				// <ProductByPrice/>
-				// <PageBreak imgSrc="6.1.jpg" styling1={{marginLeft:"-20px", width:"1520px",marginTop:"50px"}} styling2={{width:"100%"}}/>
-				// <TopCategoriesFurniture/>
+	
 
 	render() {
 		console.log(this.props.location.pathname.indexOf("login"))
 		var content;
+		if (this.props.location.pathname.indexOf("register") !== -1){
+			content = <Register/>;
+		}
+		else if (this.props.location.pathname.indexOf("login") !== -1){
+			content = <Login/>;
+		}else{
+			content = <div>
+				<ItemList/>
+				<Sofa/>
+				<ImageSlider/>
+				<PromoBox/>
+				<PromoBanner/>
+				<Promo5001000 imgSrc1="2.1.jpg" imgSrc2='2.2.jpg'/>
+				<BeliYuk/>
+				<PromoDapur/>
+				<PageBreak imgSrc="page-break.png" styling1={{marginLeft:"-20px", width:"1520px"}} styling2={{width:"100%"}}/>
+				<Promo5001000 imgSrc1="4.1.jpg" imgSrc2='4.2.jpg'/>
+				<ProductByPrice/>
+				<PageBreak imgSrc="6.1.jpg" styling1={{marginLeft:"-20px", width:"1520px",marginTop:"50px"}} styling2={{width:"100%"}}/>
+				<TopCategoriesFurniture/>;
+			</div>
+		}
 		return (
 			<div>
 				<h3><ReactHeader/></h3>
-				
-				<Register/>
+				${content}
 				<Footer/>
 			</div>
 		);
