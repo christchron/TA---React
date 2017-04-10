@@ -9,6 +9,7 @@ import ImageSlider from './image-slider';
 import PromoBox from './promo-box';
 import PromoBanner from './promo-banner';
 import PromoAC from './promo-ac';
+import BeliYuk from './beli-yuk';
 
 class Home extends Component{
 	static contextTypes = {
@@ -24,6 +25,7 @@ class Home extends Component{
 				<PromoBox/>
 				<PromoBanner/>
 				<PromoAC/>
+				<BeliYuk/>
 			</div>
 		);
 	}
