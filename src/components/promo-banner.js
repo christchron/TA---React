@@ -2,7 +2,7 @@ import React from 'react';
 
 export default (props) => {
 	return (
-		<div className="row" style={{width:"100%", marginLeft:'250px',marginTop:'650px',marginBottom:'50px'}}>
+		<div className={props.className}>
 			<div>
 				<img src='usp-price-down.png' style={{width: 30+'px', verticalAlign:''}}/>
 				<span style={{fontSize: 20+'px', fontWeight: 'bold', color: '#6A6a6a', verticalAlign:'bottom'}}>Harga jujur sepanjang tahun</span>

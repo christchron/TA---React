@@ -19,12 +19,17 @@ import Footer from './footer';
 import ItemList from './item-list';
 import Register from './register';
 import Login from './login';
+import ProductView from './product-view';
+import ProductRecommendation from './product-recommendation';
+import ProductDescription from './product-description';
+import Pengiriman from './pengiriman';
+import Disclaimer from './disclaimer';
+import MengapaDekoruma from './mengapa-dekoruma';
 
 class Home extends Component{
 	static contextTypes = {
 		router: PropTypes.object
 	}
-	
 
 	render() {
 		console.log(this.props.location.pathname.indexOf("login"))
@@ -34,13 +39,25 @@ class Home extends Component{
 		}
 		else if (this.props.location.pathname.indexOf("login") !== -1){
 			content = <Login/>;
+		}else if (this.props.location.pathname.indexOf("produk") !== -1){
+			content = <div>
+				<ItemList/>
+				<SearchTrack/>
+				<PromoBanner className="row promo-banner-product"/>
+				<ProductView/>
+				<ProductRecommendation/>
+				<ProductDescription/>
+				<Pengiriman/>
+				<Disclaimer/>
+				<MengapaDekoruma/>
+			</div>
 		}else{
 			content = <div>
 				<ItemList/>
 				<Sofa/>
 				<ImageSlider/>
 				<PromoBox/>
-				<PromoBanner/>
+				<PromoBanner className="row promo-banner-homepage"/>
 				<Promo5001000 imgSrc1="2.1.jpg" imgSrc2='2.2.jpg'/>
 				<BeliYuk/>
 				<PromoDapur/>

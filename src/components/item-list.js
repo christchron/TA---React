@@ -3,7 +3,7 @@ import FaSearch from 'react-icons/lib/fa/search';
 
 export default (props) => {
 	return (
-		<div className="row item-list" style={{marginTop:"70px"}}>
+		<div className="row" style={{marginTop:"50px", marginLeft:"-15px", width:"1520px", borderBottom:"1px solid #ccc"}}>
 			<div className="item-list">RUANG MAKAN</div>
 			<div className="item-list">DAPUR</div>
 			<div className="item-list">DEKORASI</div>

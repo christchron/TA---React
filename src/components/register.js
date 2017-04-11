@@ -17,9 +17,9 @@ export default (props) => {
 					<button className="btn btn-primary btn-large btn-daftar" style={{fontSize:"14px !important"}}>Daftar</button>
 				</div>
 			</div>
-			<div style={{margin:"20px", fontSize:"15px"}}>
+			<div style={{margin:"20px", fontSize:"15px	"}}>
 				<span>Sudah terdaftar di Dekoruma?</span>
-				<a> Login</a>
+				<a href="/login"> Login</a>
 			</div>
 		</div>
 	);

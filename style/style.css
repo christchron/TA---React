@@ -45,6 +45,11 @@ form a {
     padding: 10px 0 11px;
 }
 
+.stock-amount{
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
 .price-tag{
     font-size:15px;
     top:-.5em;
@@ -57,6 +62,11 @@ form a {
 .price-number{
     font-size:20px;
     font-weight: bold;
+}
+
+.product-recommendation-name{
+    font-size: 15px;
+    color: #82888a;
 }
 
 .product-name{
@@ -160,6 +170,57 @@ form a {
     color: #fff;
 }
 
+.promo-banner-homepage{
+    width: 100% !important;
+    margin-left: 250px !important;
+    margin-top: 650px !important;
+    margin-bottom: 50px !important;
+}
+
+.promo-banner-product{
+    margin-left: 250px !important;
+    margin-bottom: 50px !important;  
+}
+
+.product-view-name{
+    font-size: 30px;
+    letter-spacing: normal;
+    font-weight: normal;
+    line-height: 1.1;
+    color: #6A6a6a;
+}
+
+.product-view-description{
+    font-size:15px;
+}
+
+.price {
+    font-weight: 700;
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+}
+
+.price[role=currency] {
+    font-size: 100%;
+    top: -1em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    margin-right: 3px;
+}
+
+.ready-stock{
+    font-size: 15px;
+    width: 100px;
+    margin-left:20px;
+}
+
+.btn-beli-sekarang{
+    height: 50px;
+    font-size: 20px !important;
+}
+
 .decorative-input{
     background-image: url(https://a2.muscache.com/airbnb/static/signinup/text-field-icons-9c18e4e23864cb33a8f0f7c32c0b86ee.png);
     background-repeat: no-repeat;
@@ -171,7 +232,6 @@ form a {
     height: 40px;
     padding: 10px;
     width: 100%!important;
-
 }
 
 .decorative-input[type=email] {
@@ -182,6 +242,11 @@ form a {
     background-position: right -77px;
 }
 
+.search-track{
+    margin:10px !important;
+    color: #82888a;
+}
+
 .item-list{
     padding: 0 17px;
     font-family: NeutraText-Bold,Helvetica Neue;
@@ -189,6 +254,17 @@ form a {
     font-size: 17px;
     color: #82888a;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mengapa-dekoruma{
+    margin-bottom: 20px;
+    height: 200px;
+    background: rgba(238, 238, 238, 0.38);
+    border-bottom: 1px solid #ccc;
+    margin-left: -15px;
+    width: 1520px;
+    margin-top: 30px;
 }
 
 .label {
@@ -215,8 +291,16 @@ table {
 }
 
 th {
-    background-color: #00A2E3;
-    color: white;
+    background-color: #eee;
+    color: black;
+    font-weight: bold;
+}
+
+.padding-table-deskripsi{
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .input-group{
@@ -243,10 +327,6 @@ th {
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{
     background-color: #f9f9f9;
     border: 1px solid rgb(249, 249, 249);
-}
-
-.btn{
-	font-size: 0.7rem !important;
 }
 
 input, button, select, textarea{
