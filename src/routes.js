@@ -18,6 +18,7 @@ export default (
 		<Route path="register" component = {Home} />
 		<Route path="login" component = {Home} />
 		<Route path="produk" component = {Home} />
+		<Route path="search" component = {Home} />
 		<Route path="chat_count" component = {ShowChatCount} />
 		<Route path="conversation" component = {ShowConversation} />
 		<Route path="conversation" component = {ShowConversation} />

@@ -25,20 +25,48 @@ import ProductDescription from './product-description';
 import Pengiriman from './pengiriman';
 import Disclaimer from './disclaimer';
 import MengapaDekoruma from './mengapa-dekoruma';
+import Search from './search';
 
 class Home extends Component{
 	static contextTypes = {
 		router: PropTypes.object
 	}
 
+	constructor() {
+		super();
+		this.state = { 
+			data:[]
+		};
+	}
+
+	setStartState(){
+		this.props.fetchAnalyticsAction.fetchAnalyticsData("dekoruma.json");
+	}
+
+	componentWillMount() {
+		this.setStartState();
+	}
+
+	componentWillReceiveProps(nextProps){
+		console.log("next props",nextProps.analyticsData)
+		const {analyticsData} = nextProps;
+		if (analyticsData){
+			this.setState({
+				data: analyticsData
+			});	
+		}
+	}
+
 	render() {
-		console.log(this.props.location.pathname.indexOf("login"))
+		console.log("data",this.state.data)
 		var content;
 		if (this.props.location.pathname.indexOf("register") !== -1){
 			content = <Register/>;
 		}
 		else if (this.props.location.pathname.indexOf("login") !== -1){
 			content = <Login/>;
+		}else if (this.props.location.pathname.indexOf("search") !== -1){
+			content = <Search data={this.state.data}/>;
 		}else if (this.props.location.pathname.indexOf("produk") !== -1){
 			content = <div>
 				<ItemList/>

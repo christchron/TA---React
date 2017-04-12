@@ -48,7 +48,7 @@ export function deletePost (id) {
 
 export function fetchAnalyticsData(name,callback = null){
 	return (dispatch) => {
-		fetch(`http://localhost:8080/${name}`,
+		fetch(`http://localhost:8081/${name}`,
 			{method: 'GET', headers: {'Content-Type': 'application/json'}, credentials: 'include'})
 			.then(checkStatus)
 			.then(parseJSON)
