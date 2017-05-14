@@ -16,12 +16,16 @@ form a {
     margin-left: 30px;
 }
 
+.width-300{
+    width:300px;
+}
+
 .header{
     position: fixed !important;
-    z-index: 2 !important;
+    z-index: 3 !important;
     margin-top: -10px !important;
     background: white !important;
-`   white-space: nowrap !important;
+    white-space: nowrap !important;
 }
 
 .center{
@@ -107,7 +111,6 @@ form a {
     font-size: 15px !important;
     border: none;
     white-space: nowrap;
-
 }
 
 .sofa-text{

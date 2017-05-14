@@ -4,8 +4,8 @@ import FaSearch from 'react-icons/lib/fa/search';
 export default (props) => {
 	return (
 		<div className="row" style={{marginTop:"50px", marginLeft:"-15px", width:"1520px", borderBottom:"1px solid #ccc"}}>
-			<div className="item-list">RUANG MAKAN</div>
-			<div className="item-list">DAPUR</div>
+			<a href="/search?category=makan"><div className="item-list">RUANG MAKAN</div></a>
+			<a href="/search?category=dapur"><div className="item-list">DAPUR</div></a>
 			<div className="item-list">DEKORASI</div>
 			<div className="item-list">KAMAR TIDUR</div>
 			<div className="item-list">KASUR</div>

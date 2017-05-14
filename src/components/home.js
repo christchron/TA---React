@@ -66,15 +66,19 @@ class Home extends Component{
 		else if (this.props.location.pathname.indexOf("login") !== -1){
 			content = <Login/>;
 		}else if (this.props.location.pathname.indexOf("search") !== -1){
-			content = <Search data={this.state.data}/>;
+			content = <div>
+				<ItemList/>
+				<Search data={this.state.data} category={this.props.location.query.category}/>
+			</div>
 		}else if (this.props.location.pathname.indexOf("produk") !== -1){
+			console.log("params",this.props.location.query)
 			content = <div>
 				<ItemList/>
 				<SearchTrack/>
 				<PromoBanner className="row promo-banner-product"/>
-				<ProductView/>
+				<ProductView data={this.state.data} id={this.props.location.query.id-1}/>
 				<ProductRecommendation/>
-				<ProductDescription/>
+				<ProductDescription data={this.state.data} id={this.props.location.query.id-1}/>
 				<Pengiriman/>
 				<Disclaimer/>
 				<MengapaDekoruma/>

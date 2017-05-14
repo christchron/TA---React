@@ -7,22 +7,32 @@ class Search extends Component {
     constructor(props) {
         super(props);
         console.log("a",props);
-        const {data} = props;
+        const {data,category} = props;
         this.state = {
             data,
-            perPage: 4,
+            category,
+            perPage: 300,
             currentPage:0,
-            pageCount:1
+            pageCount:1,
+            categoryData:[]
         };
     }
 
     componentWillReceiveProps(nextProps) {
-        const {data} = nextProps
+        const {data,category} = nextProps
         if (nextProps) {
+        	var categoryData=[];
+        	data.produk.map((produk) =>{
+        		if(produk.category === category){
+        			categoryData.push(produk);
+        		}
+        	}) ;
+        	console.log(categoryData);
             this.setState({
             	data,
-            	slicedData: _.chunk(data.produk,this.state.perPage),
-            	pageCount: Math.ceil(data.produk.length/this.state.perPage)
+            	categoryData,
+            	slicedData: _.chunk(categoryData,this.state.perPage),
+            	pageCount: Math.ceil(categoryData.length/this.state.perPage)
             });
         }
     }
@@ -38,22 +48,22 @@ class Search extends Component {
 		if(this.state.data){
 			if (!this.state.data.produk){
 			}else{
-				console.log("props",this.state.data.produk.length);
-				console.log("currentPage",this.state.currentPage)
 				var products = this.state.slicedData[this.state.currentPage].map((product) =>
 					<div style={{marginLeft: 50+'px', margin:"30px",width:"250px"}}	key={product.id}>
-						<div className="center" style={{height:"140px",  height:"200px"}}>
-							<img src={product.image} style={{maxWidth:"200px", maxHeight:"200px"}}/>
-						</div>
-						<div className="center">
-							<span className="price-tag">Rp</span>
-							<span className="price-number">{product.price}</span>
-						</div>
-						<div className="center">
-							<div className="product-name">
-								{product.name}
+						<a href={"/produk?id="+product.id}>
+							<div className="center" style={{height:"200px"}}>
+								<img src={product.image} style={{maxWidth:"200px", maxHeight:"200px"}}/>
 							</div>
-						</div>
+							<div className="center" style={{color:"#82888a"}}>
+								<span className="price-tag">Rp</span>
+								<span className="price-number">{product.price}</span>
+							</div>
+							<div className="center">
+								<div className="product-name">
+									{product.name}
+								</div>
+							</div>
+						</a>
 					</div>
 				);
 
@@ -77,13 +87,13 @@ class Search extends Component {
 		}
 		
 		return (
-			<div style={{marginTop:"70px"}}>
-				<div className="row">
+			<div>
+				<div className="row" style={{marginLeft:"0px"}}>
 					<SearchTrack/>
 					<div style={{marginLeft:"1000px", marginTop:"-8px"}}>
 						<ReactPaginate 
-								previousLabel={"previous"}
-								nextLabel={"next"}
+								previousLabel={"<"}
+								nextLabel={">"}
 								breakLabel={<a href="">...</a>}
 								breakClassName={"break-me"}
 								pageCount={this.state.pageCount}
@@ -98,7 +108,7 @@ class Search extends Component {
 				<div className="row">
 					<div style={{width:"150px", fontSize:"13px", height:"1000px", marginLeft:"30px"}}>
 						<div><h4 style={{textAlign:"left"}}>Tampilkan hasil untuk: </h4></div>
-						<div style={{fontWeight:"500", marginLeft:"10px"}}>Dapur (25)</div>
+						<div style={{fontWeight:"500", marginLeft:"10px"}}>{this.state.category} ({this.state.categoryData.length})</div>
 					</div>
 					<div>
 						{showProduct}
