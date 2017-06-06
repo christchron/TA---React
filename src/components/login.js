@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Register from './register';
-import LoginForm from './login-form';
 
 class Login extends Component{
 	constructor(props) {

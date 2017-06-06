@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import RegisterForm from './register-form';
 import Login from './login';
 
 class Register extends Component{
