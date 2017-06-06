@@ -11,7 +11,7 @@ class Search extends Component {
         this.state = {
             data,
             category,
-            perPage: 300,
+            perPage: 1200,
             currentPage:0,
             pageCount:1,
             categoryData:[]
